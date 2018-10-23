@@ -56,3 +56,21 @@
 最後確認權限
 <pre><code># ls -l</code></pre>
 ![06](pic2/06.PNG)
+
+#### 建立一個名為 /examdata/change.txt 的空檔案
+<pre><code># mkdir examdata
+# touch examdata/change.txt</code></pre>
+#### 修改檔案相關資料
+檔案的擁有者為 sshd
+<pre><code># chown sshd change.txt</code></pre>
+擁有群組為 users
+<pre><code># chgrp users change.txt</code></pre>
+sshd 可讀可寫，users 群組成員可讀， 其他人沒權限
+<pre><code># chmod 640 change.txt</code></pre>
+修改日期調整成 2012 年 12 月 21 日
+<pre><code># touch -t 1212210000 change.txt</code></pre>
+最後確認修改結果
+<pre><code># ls -l</code></pre>
+![07](pic2/07.PNG)
+
+
