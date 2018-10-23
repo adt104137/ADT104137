@@ -26,3 +26,15 @@
 <pre><code># ls -l</code></pre>
 ![04](pic2/04.PNG)<br/>
 發現其家目錄由UID以及GID替代examuser1為使用者
+### * 嘗試以原本的UID及GID重建帳號
+建立一群組，給定原使用者的GID作為群組ID
+<pre><code># gruopadd -g 1001 examuser1</code></pre>
+創建帳號，指定原UID為使用者的ID，並將該使用者加入原群組
+<pre><code># useradd -u 1001 -g examuser1 examuser1</code></pre>
+查詢使用者的UID及GID
+<pre><code># id examuser1</code></pre>
+查詢home下的家目錄
+<pre><code># ls -l</code></pre>
+重新定密碼給examuser1
+<pre><code># passwd examuser1</code></pre>
+![05](pic2/05.PNG)<br/>
