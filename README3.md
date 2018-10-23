@@ -73,4 +73,18 @@ sshd 可讀可寫，users 群組成員可讀， 其他人沒權限
 <pre><code># ls -l</code></pre>
 ![07](pic2/07.PNG)
 
+## 3.
+### * 建立資料夾，以及修改權限，檢查權限
+<pre><code># mkdir unit05
+# chmod 775 unit05
+# ls -l</code></pre>
+![08](pic2/08.PNG)
+### *　複製檔案到資料夾，進入資料夾中修改檔案權限
+<pre><code># cp /etc/hosts ./dir1/file1
+# cd dir1
+# chmod 644 file1
+# ls -l</code></pre>
+![09](pic2/09.PNG)
+
+
 
