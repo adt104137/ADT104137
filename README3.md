@@ -38,3 +38,10 @@
 重新定密碼給examuser1
 <pre><code># passwd examuser1</code></pre>
 ![05](pic2/05.PNG)<br/>
+
+## 2.
+### * 建立examuser4使用者
+<pre><code># useradd examuser4
+# passwd examuser4</code></pre>
+### * 
+
