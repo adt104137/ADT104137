@@ -85,6 +85,20 @@ sshd 可讀可寫，users 群組成員可讀， 其他人沒權限
 # chmod 644 file1
 # ls -l</code></pre>
 ![09](pic2/09.PNG)
-
+### * 切換為一般使用者
+<pre><code># su examuser2</code></pre>
+#### 輸入ls -l /dev/shm/unit05/dir1
+![10](pic2/10.PNG)<br/>
+根據一般使用者的權限，unit05是可閱讀且執行的，所以能順利進到資料夾裡面<br/>
+但dir1能閱讀不能執行，只能知道在dir1裡有file1，卻無法開啟dir1得知詳細資料
+#### 輸入ls -l /dev/shm/unit05/dir2
+![11](pic2/11.PNG)<br/>
+dir2能執行卻不能閱讀，導致無法判讀dir2
+#### 輸入ls -l /dev/shm/unit05/dir3
+![12](pic2/12.PNG)<br/>
+dir3可閱讀且可執行，順利得知資料夾內檔案的詳細資料
+#### 輸入ls -l /dev/shm/unit05/dir4
+![13](pic2/13.PNG)<br/>
+同樣能執行跟閱讀，能得知詳細資料
 
 
