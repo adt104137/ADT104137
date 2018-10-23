@@ -87,28 +87,40 @@ sshd 可讀可寫，users 群組成員可讀， 其他人沒權限
 ![09](pic2/09.PNG)
 ### * 切換為一般使用者
 <pre><code># su examuser2</code></pre>
-#### 輸入ls -l /dev/shm/unit05/dir1
+#### 輸入 ls -l /dev/shm/unit05/dir1
 ![10](pic2/10.PNG)<br/>
 根據一般使用者的權限，unit05是可閱讀且執行的，所以能順利進到資料夾裡面<br/>
 但dir1能閱讀不能執行，只能知道在dir1裡有file1，卻無法得知詳細資料
-#### 輸入ls -l /dev/shm/unit05/dir2
+#### 輸入 ls -l /dev/shm/unit05/dir2
 ![11](pic2/11.PNG)<br/>
 dir2能執行卻不能閱讀，導致無法判讀dir2內
-#### 輸入ls -l /dev/shm/unit05/dir3
+#### 輸入 ls -l /dev/shm/unit05/dir3
 ![12](pic2/12.PNG)<br/>
 dir3可閱讀且可執行，順利得知資料夾內檔案的詳細資料
-#### 輸入ls -l /dev/shm/unit05/dir4
+#### 輸入 ls -l /dev/shm/unit05/dir4
 ![13](pic2/13.PNG)<br/>
 同樣能執行跟閱讀，能得知詳細資料
-#### 輸入ls -l /dev/shm/unit05/dir1/file1
+#### 輸入 ls -l /dev/shm/unit05/dir1/file1
 ![14](pic2/14.PNG)<br/>
 dir1無法執行，沒辦法得知資料夾內file1資料
-#### 輸入ls -l /dev/shm/unit05/dir2/file2
+#### 輸入 ls -l /dev/shm/unit05/dir2/file2
 ![15](pic2/15.PNG)<br/>
 dir2能被執行，所以能得知詳細資料
-#### 輸入ls -l /dev/shm/unit05/dir3/file3
+#### 輸入 ls -l /dev/shm/unit05/dir3/file3
 ![16](pic2/16.PNG)<br/>
 dir3能被執行且閱讀
-#### 輸入ls -l /dev/shm/unit05/dir4/file4
+#### 輸入 ls -l /dev/shm/unit05/dir4/file4
 ![17](pic2/17.PNG)<br/>
 dir4能被執行
+#### 輸入 vi /dev/shm/unit05/dir1/file1
+![18](pic2/18.PNG)<br/>
+無法被存取，dir1無法執行，file1內文字也沒有顯示
+#### 輸入 vi /dev/shm/unit05/dir2/file2
+![19](pic2/19.PNG)<br/>
+只能被讀取
+#### 輸入 vi /dev/shm/unit05/dir3/file3
+![20](pic2/20.PNG)<br/>
+可以存取修改資料
+#### 輸入 vi /dev/shm/unit05/dir4/file4
+![21](pic2/21.PNG)<br/>
+無法讀取以及存取，內部資料無法得知
