@@ -37,11 +37,22 @@
 <pre><code># ls -l</code></pre>
 重新定密碼給examuser1
 <pre><code># passwd examuser1</code></pre>
-![05](pic2/05.PNG)<br/>
+![05](pic2/05.PNG)
 
 ## 2.
 ### * 建立examuser4使用者
 <pre><code># useradd examuser4
 # passwd examuser4</code></pre>
-### * 
-
+### * 將/etc/securetty 複製給 examuser4，且該帳號要能夠完整使用該檔案
+查看securetty原本的權限
+<pre><code># ls -ld /etc/securetty</code></pre>
+將securetty複製到examuser4之家目錄下
+<pre><code># cp -r /etc/securetty /home/examuser4</code></pre>
+轉換到家目錄下
+<pre><code># cd /home/examuser4</code></pre>
+更改securetty的擁有者以及其權限
+<pre><code># chown examuser4 securetty
+# chmod 777 securetty</code></pre>
+最後確認權限
+<pre><code># ls -l</code></pre>
+![06](pic2/06.PNG)
