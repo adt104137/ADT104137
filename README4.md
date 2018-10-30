@@ -37,7 +37,7 @@
 建立myuser1.data
 <pre><code># touch myuser1.data</code></pre>
 ![04](pic3/04.PNG)
-### * 復制/usr/bin/ls至/usr/local/bin/myls。雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行 /usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行【myls /srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。
+### * 復制/usr/bin/ls至/usr/local/bin/myls後，完成下列操作<br/>雖然 nogroup 群組內的用戶對於 /srv/myproject 應該沒有任何權限，但當 nogroup 內的用戶執行 /usr/local/bin/myls 時，可以產生與 ls 相同的資訊，且暫時擁有 mygroup 群組的權限，因此可以查詢到 /srv/myproject 目錄內的檔名資訊。 也就是說，當你使用 nouser1 的身分執行【myls /srv/myproject】時，應該是能夠查閱到該目錄內的檔名資訊。
 復制/usr/bin/ls至/usr/local/bin/myls
 <pre><code># cp /usr/bin/ls /usr/local/bin/myls</code></pre>
 給myls的SUID權限
@@ -45,8 +45,11 @@
 使用者切換成nouser1，以該身分執行myls /srv/myproject
 <pre><code># su nouser1
 # myls /srv/myproject</code></pre>
-可查閱到該目錄內的檔名資訊myuser1.data
+可查閱到該目錄內的檔名資訊myuser1.data<br/>
 ![05](pic3/05.PNG)
 ### 2. 用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中
 <pre><code># ps aux | grep rsyslog > /root/process_syslog.txt</code></pre>
+![06](pic3/06.PNG)<br/>
+利用 ps aux (觀察程序)配合 grep (搜尋)找到含rsyslog程序，再配合 > 轉存資訊到 /root/process_syslog.txt 裡
+### 3. 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l 去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中
 
