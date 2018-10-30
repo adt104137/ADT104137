@@ -46,4 +46,4 @@
 <pre><code># su nouser1
 # myls /srv/myproject</code></pre>
 可查閱到該目錄內的檔名資訊myuser1.data
-
+![05](pic3/05.PNG)
