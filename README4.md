@@ -23,8 +23,9 @@
 <pre><code># chgrp mygroup /srv/myproject</code></pre>
 轉換到srv內對myproject的權限進行設定
 <pre><code># cd /srv
-#chmod 2770 myproject</code></pre>
+# chmod 2770 myproject</code></pre>
 2770的2是SGID設定，建立新檔案的群組與此目錄的群組相同<br/>
+<br/>
 檢查目錄權限
 <pre><code># ls -ld myproject</code></pre>
 ![03](pic3/03.PNG)
