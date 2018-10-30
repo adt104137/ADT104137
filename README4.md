@@ -47,9 +47,9 @@
 # myls /srv/myproject</code></pre>
 可查閱到該目錄內的檔名資訊myuser1.data<br/>
 ![05](pic3/05.PNG)
-### 2. 用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中
+## 2. 用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中
 <pre><code># ps aux | grep rsyslog > /root/process_syslog.txt</code></pre>
 ![06](pic3/06.PNG)<br/>
 利用 ps aux (觀察程序)配合 grep (搜尋)找到含rsyslog程序，再配合 > 轉存資訊到 /root/process_syslog.txt 裡
-### 3. 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l 去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中
+## 3. 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l 去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中
 
