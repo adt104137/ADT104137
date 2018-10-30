@@ -53,4 +53,9 @@
 ![06](pic3/06.PNG)<br/>
 可用cat指令查看內容
 ## 3. 使用 find 找出 /usr/bin 及 /usr/sbin 兩個目錄中，含有 SUID 的特殊檔案檔名，並使用 ls -l 去列出找到的檔案的相關權限後，將螢幕資料轉存到 /root/findsuidsgid.txt 檔案中
-
+<pre><code># ls -l /usr/bin /usr/sbin | find / -perm /u=s > /root/findsuidsgid.txt</code></pre>
+find / -perm /u=s 能列出系統中所有 SUID 的檔案<br/>
+![07](pic3/07.PNG)<br/>
+以 > 轉存資料<br/>
+最後利用cat指令確認txt<br/>
+![08](pic3/08.PNG)
