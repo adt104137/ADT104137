@@ -29,5 +29,21 @@
 檢查目錄權限
 <pre><code># ls -ld myproject</code></pre>
 ![03](pic3/03.PNG)
-
+### * 以 myuser1 的身分前往 /srv/myproject 目錄，嘗試建立一個名為 myuser1.data 的檔案，之後登出 myuser1
+切換使用者
+<pre><code># su myuser1</code></pre>
+前往/srv/myproject
+<pre><code># cd /srv/myproject</code></pre>
+建立myuser1.data
+<pre><code># touch myuser1.data</code></pre>
+![04](pic3/04.PNG)
+### * 
+復制/usr/bin/ls至/usr/local/bin/myls
+<pre><code># cp /usr/bin/ls /usr/local/bin/myls</code></pre>
+給myls的SUID權限
+<pre><code># chmod 4777 /usr/local/bin/myls</code></pre>
+使用者切換成nouser1，以該身分執行myls /srv/myproject
+<pre><code># su nouser1
+# myls /srv/myproject</code></pre>
+可查閱到該目錄內的檔名資訊myuser1.data
 
