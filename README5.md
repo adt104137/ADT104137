@@ -36,11 +36,11 @@
 
 * 說明原因
 
-建立符號連結(soft link)
+建立符號連結(Symbolic link)
 <pre><code># ln -s /etc/hosts /srv/hosts.soft</code></pre>
 查詢
 <pre><code># ls -li /srv/hosts.soft</code></pre>
 ![03](pic4/03.PNG)<br/>
-建立soft link的檔案inode為12933105，連結數為1。<br/>
-
+建立Symbolic link的檔案inode為12933105，連結數為1。<br/>
+這是因為Symbolic link是建立一個獨立的檔案，會讓資料的讀取指向他連結的原檔檔名，所以inode和連結數與原檔不相同
 
