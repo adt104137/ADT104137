@@ -46,22 +46,20 @@
 
 * **請用`df`指令配合`human-readable`選項，顯示有1GB的檔案系統正掛載到`/srv/maildir` (8%)**
 
-
+![01](test/01.PNG)
 
 * **請用`grep`驗證有設定開機自動掛載。(8%)**
 
-
+![02](test/02.PNG)
 
 * **請用`ls`查詢`/srv/maildir`屬性，確認可以讓`mailgroup`群組共用，而其他人不具任何權限。(8%)**
 
-
+![03](test/03.PNG)
 
 * **請用`id`檢查`mailuser`使用者有在`mailgroup`. (8%)**
 
-
+![04](test/04.PNG)
 
 * **請用`grep`驗證此帳號無法透過shell登入。(8%)**
 
-
-
-
+![05](test/05.PNG)
