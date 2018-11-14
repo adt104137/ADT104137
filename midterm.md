@@ -16,7 +16,7 @@
 數字法
 <pre><code># chmod +1 script.sh</code></pre>
 符號法
-<pre><code># chmod +x script.sh</code></pre>
+<pre><code># chmod +x script.sh<pre><code>
 
 
 
@@ -26,7 +26,8 @@
 
 * **在家目錄下建立一個檔名為 hosts.real 的實體連結指到 /etc/hosts？ (請用相對路徑表示家目錄) (5%)**
 
+<pre><code># ln /etc/hosts ~/hosts.real<pre><code>
 
 * **在家目錄下建立一個檔名為 hosts.symbo 的符號連結指到 /etc/hosts？ (請用相對路徑表示家目錄 (5%)**
 
-
+<pre><code># ln -s /etc/hosts ~/hosts.symbo<pre><code>
