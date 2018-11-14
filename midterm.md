@@ -13,6 +13,12 @@
 
 * **假設有一個script.sh檔案的權限為-rw-r--r--，若希望讓所有人可以執行該檔案，請問該如何下達指令？請使用數字法與符號法各操作一次。(10%)**
 
+數字法
+<pre><code># chmod +1 script.sh</code></pre>
+符號法
+<pre><code># chmod +x script.sh</code></pre>
+
+
 
 ## 3.
 * **說明實體連結與符號連結的差異。(10%)**
