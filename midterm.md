@@ -2,6 +2,8 @@
 ## 1.
 * **設定 ver 變數，內容為『 my kernel version is 3.xx 』，其中 3.xx 為 uname -r 輸出的資訊，並顯示出ver變數的值。(10%)**
 
+<pre><code># ver="my kernel version is $(uname -r)"
+# echo $ver</code></pre>
 
 * **請顯示目前PATH環境變數的值為何，並說明PATH的功用為何? (10%)**
 
