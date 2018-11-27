@@ -45,4 +45,4 @@
 輸入
 <pre><code># ./a.out
 # echo $?</code></pre>
-![04](pic5/04.PNG)
+![05](pic5/05.PNG)
