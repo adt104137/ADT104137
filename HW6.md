@@ -1,4 +1,5 @@
 # ADT104137 - HW6
+
 * 請在家目錄下的.bashrc裡新增一個shell變數 HOSTS_PATH=/etc/hosts，(注意不需用export)，說明如何不登出讓HOSTS_PATH變數生效，執行cat $HOST_PATH確認有讀取到檔案內容。
 
 透過vi編輯
@@ -31,3 +32,7 @@
 以echo查詢$?
 <pre><code># echo $?</code></pre>
 得到值為1
+![03](pic5/03.PNG)
+
+* 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
+
