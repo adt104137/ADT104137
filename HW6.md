@@ -44,5 +44,5 @@
 <pre><code># source ~/.bashrc</code></pre>
 輸入
 <pre><code># ./a.out
-#echo $?</code></pre>
+# echo $?</code></pre>
 ![04](pic5/04.PNG)
