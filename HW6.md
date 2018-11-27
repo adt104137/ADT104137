@@ -3,7 +3,7 @@
 
 透過vi編輯
 <pre><code># vi ~/.bashrc</code></pre>
-輸入
+在文件內輸入
 <pre><code># HOSTS_PATH="/etc/hosts"</code></pre>
 ![01](pic5/01.PNG)<br/>
 編輯完成後，按esc、輸入 :wq 存取並退出編輯模式<br/>
@@ -13,3 +13,6 @@
 最後以cat 確認有讀取到檔案內容
 <pre><code># cat $HOSTS_PATH</code></pre>
 ![02](pic5/02.PNG)
+
+* 在C語言程式可以用getenv()讀取LINUX的環境變數，範例程式如題。請在Linux裡編譯此範例程式並執行，請問否有讀到HOSTS_PATH以及$?的值為何，請說明。也許需透過yum groupinstall "Development Tools"安裝gcc。
+
