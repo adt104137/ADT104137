@@ -5,7 +5,7 @@
 透過vi編輯
 <pre><code># vi ~/.bashrc</code></pre>
 在文件內輸入
-<pre><code># HOSTS_PATH="/etc/hosts"</code></pre>
+<pre><code>HOSTS_PATH="/etc/hosts"</code></pre>
 ![01](pic5/01.PNG)<br/>
 編輯完成後，按esc、輸入 :wq 存取並退出編輯模式<br/>
 
@@ -36,3 +36,13 @@
 
 * 在.bashrc裡要如何修正，讓C語言程式可以讀到環境變數並將檔案內容顯示。
 
+再次透過vi編輯
+<pre><code># vi ~/.bashrc</code></pre>
+在之前加入的指令下輸入
+<pre><code>export HOSTS_PATH</code></pre>
+再次輸入指令讓變更生效
+<pre><code># source ~/.bashrc</code></pre>
+輸入
+<pre><code># ./a.out
+#echo $?</code></pre>
+![04](pic5/04.PNG)
