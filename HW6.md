@@ -18,3 +18,16 @@
 
 安裝gcc
 <pre><code># yum groupinstall "Development Tools"</code></pre>
+透過vi新增c語言檔案，按i編輯檔案
+<pre><code># vi program.c</code></pre>
+將題目的程式碼輸入進檔案，編輯完成按esc、輸入 :wq 存檔並離開<br/>
+
+輸入gcc 編譯程式碼
+<pre><code># gcc program.c</code></pre>
+輸入
+<pre><code># ./a.out</code></pre>
+發現讀取不到HOSTS_PATH<br/>
+
+以echo查詢$?
+<pre><code># echo $?</code></pre>
+得到值為1
