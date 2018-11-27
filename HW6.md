@@ -26,7 +26,7 @@
 <pre><code># gcc program.c</code></pre>
 輸入
 <pre><code># ./a.out</code></pre>
-發現讀取不到HOSTS_PATH<br/>
+發現讀取不到HOSTS_PATH，因它不在子程序內<br/>
 
 以echo查詢$?
 <pre><code># echo $?</code></pre>
