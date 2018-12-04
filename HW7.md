@@ -16,6 +16,9 @@
 
 ### 2.tar是linux下用來打包壓縮目錄的工具，請自行查詢tar的用法後，用一般使用者身份打包並壓縮/var目錄。在tar執行過程中，忽略正常輸出結果，但需將錯誤訊息輸出至tar-err.log檔案。
 
+切換為一般使用者，利用 "tar -jcv -f (檔案名稱).tar.bz2 (欲壓縮檔案)" 指令打包壓縮目錄，以 2> 指令將錯誤訊息傳輸到 tar-err.log
+<pre><code># tar -jcv -f varnew.tar.bz2 /var 2> tar-err.log</code></pre>
 
-<pre><code>#</code></pre>
-![02](pic5/02.PNG)<br/>
+使用 cat 指令查看檔案
+<pre><code># cat tar-err.log</code></pre>
+![03](pic6/03.PNG)
