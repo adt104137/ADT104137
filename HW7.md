@@ -6,8 +6,7 @@
 
 使用 curl -O 指令，後面加上網址
 <pre><code># curl -O https://raw.githubusercontent.com/ogre0403/107-1-ntcu-linux/master/resource/web.log</code></pre>
-
-
+![01](pic6/01.PNG)
 
 * 使用bash的pipe指令，例如grep、cat...等等，將此日誌中error發生的原因輸出至螢幕，但其他資訊不需要呈現。
 
