@@ -1,7 +1,8 @@
 # ADT104137
 
 * 設定virtualbox虛擬機器，加入一張host-only網路卡，在Linux裡設定虛擬機器的網路為192.168.200.100/24。請用 `ifconfig`驗證。(25%)
-
+<pre><code># ifconfig enp0s8 192.168.200.100
+# ip addr show</code></pre>
 ![01](final/01.PNG)
 
 * nginx是一套網頁伺服器軟體，請用`yum`安裝，透過`systemctl`啟動後，使用`netstat`驗證nginx有在使用Port 80。(25%)
