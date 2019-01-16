@@ -2,11 +2,19 @@
 
 * 設定virtualbox虛擬機器，加入一張host-only網路卡，在Linux裡設定虛擬機器的網路為192.168.200.100/24。請用 `ifconfig`驗證。(25%)
 
+![01](final/01.PNG)
+
 * nginx是一套網頁伺服器軟體，請用`yum`安裝，透過`systemctl`啟動後，使用`netstat`驗證nginx有在使用Port 80。(25%)
+
+![02](final/02.PNG)
 
 * 透過實體 windows 上的瀏覽器，連線至192.168.200.100。抓圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)
 
+![03](final/03.PNG)
+
 * 在Linux裡，用`curl`連線至192.168.200.100。抓圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)
+
+![04](final/04.PNG)
 
 * nginx的日誌檔位於`/var/log/nginx`目錄下，當連線不存在的網頁時，nginx會記錄相關資訊，格式如下。其中client欄位為客戶端ip。 (30%)
 
@@ -22,3 +30,5 @@
     2  127.0.0.1
     1  192.168.200.100
 ```
+
+![05](final/05.PNG)
