@@ -7,14 +7,18 @@
 
 * nginx是一套網頁伺服器軟體，請用`yum`安裝，透過`systemctl`啟動後，使用`netstat`驗證nginx有在使用Port 80。(25%)
 
+<pre><code># systemctl start nginx.service
+# netstat -alntp | grep nginx</code></pre>
 ![02](final/02.PNG)
 
 * 透過實體 windows 上的瀏覽器，連線至192.168.200.100。抓圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)
 
+<pre><code>#</code></pre>
 ![03](final/03.PNG)
 
 * 在Linux裡，用`curl`連線至192.168.200.100。抓圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)
 
+<pre><code>#</code></pre>
 ![04](final/04.PNG)
 
 * nginx的日誌檔位於`/var/log/nginx`目錄下，當連線不存在的網頁時，nginx會記錄相關資訊，格式如下。其中client欄位為客戶端ip。 (30%)
@@ -32,4 +36,5 @@
     1  192.168.200.100
 ```
 
+<pre><code>#</code></pre>
 ![05](final/05.PNG)
