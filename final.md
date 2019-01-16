@@ -8,7 +8,7 @@
 
 * nginx是一套網頁伺服器軟體，請用`yum`安裝，透過`systemctl`啟動後，使用`netstat`驗證nginx有在使用Port 80。(25%)
 
-<pre><code># systemctl enable nginx.service
+<pre><code># systemctl enable nginx
 # netstat -alntp | grep nginx</code></pre>
 ![02](final/02.PNG)
 
@@ -39,3 +39,4 @@
 
 <pre><code>#</code></pre>
 ![05](final/05.PNG)
+/etc/yum.repos.d/nginx.repo
