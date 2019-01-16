@@ -19,7 +19,7 @@
 
 * 在Linux裡，用`curl`連線至192.168.200.100。抓圖驗證可以連線至Linux上的nginx網頁伺服器。(10%)
 
-<pre><code>#</code></pre>
+<pre><code># curl 192.168.200.100</code></pre>
 ![04](final/04.PNG)
 
 * nginx的日誌檔位於`/var/log/nginx`目錄下，當連線不存在的網頁時，nginx會記錄相關資訊，格式如下。其中client欄位為客戶端ip。 (30%)
